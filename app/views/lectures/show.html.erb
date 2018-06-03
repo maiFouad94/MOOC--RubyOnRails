@@ -1,0 +1,40 @@
+<%= javascript_include_tag Ckeditor.cdn_url %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Content:</strong>
+  <%= raw(@lecture.content) %>
+</p>
+
+<p>
+  <strong>Attachment:</strong>
+  <%= link_to "Download file", @lecture.attachment_url %>
+</p>
+
+<p>
+  <strong>Course:</strong>
+  <%= @lecture.course_id %>
+</p>
+<%= link_to like_lecture_path(@lecture), method: :put do %>
+  Like
+  <%= @lecture.get_upvotes.size %>
+<% end %>
+
+<%= link_to dislike_lecture_path(@lecture), method: :put do %>
+  Dislike
+  <%= @lecture.get_downvotes.size %>
+<% end %>
+
+
+<% if((current_user) && !(@ids.include? current_user.id )) %>
+<%= link_to 'Spam',spam_lecture_path(@lecture) , method: :post %>
+<% end %>
+
+<p>
+	<%= link_to "Comments", lecture_comments_path(lecture_id: @lecture.id) %>
+</p>
+
+<% if((current_user) && (current_user.id == @lecture.user_id)) %>
+<%= link_to 'Edit', edit_course_lecture_path(@lecture) %> |
+<% end %>
+<%= link_to 'Back', course_lectures_path(@lecture.course) %>

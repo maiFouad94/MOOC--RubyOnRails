@@ -1,0 +1,144 @@
+   52  svn --version
+   53  svn https://svn.riouxsvn.com/svnday1 co 
+   55  svn co https://svn.riouxsvn.com/svnday1
+   57  cd svnday1/
+   58  svn add *
+   59  svn log 
+   60  svn ci
+   61  svn commit -m "hamada"
+   62  svn update .
+   65  svn log 
+   67  svn status
+   69  svn status
+   70  svn revert -R .
+   72  svn delete test 
+   73  svn status
+   75  svn --help 
+   76  svn ci 
+   77  svn update 
+   79  svn co https://svn.riouxsvn.com/svnday1
+   80  cd svnday1/
+   84  svn add *
+   85  svn ci 
+   86  svn ci -m "create hamada" 
+   88  svn mv hamada hamadarenamed
+   89  svn add *
+   90  svn ci -m "added remanmed updated"
+   92  svn log 
+   95  svn up .
+   96  svn log 
+   97  svn blame hamadarenamed 
+   98  svn --help 
+  100  svn st
+  101  svn info 
+  103  svn revert 
+  105  svn revert -R 
+  107  svn revert --help 
+  109  svn revert -
+  110  svn revert -R . 
+  114  svn mv trunk branches
+  118  svn rm *
+  121  svn revrert -R .
+  133  mkdir svn 
+  134  cd svn 
+  136  svn co https://svn.riouxsvn.com/svnday1
+  137  svn co https://svn.riouxsvn.com/svnday1
+  138  svn co https://svn.riouxsvn.com/mimo
+  145  svn ci -m "add new file"
+  146  svn add *
+  147  svn ci -m "recommit the new file"
+  148  svn up . 
+  150  svn blame file 
+  151  svn mv file file1
+  152  svn ci -m "delete rename"
+  160  svn mkdir br1
+  163  svn cp ../../trunk .
+  165  svn ci -"new branche br1"
+  166  svn ci -m "new branche br1"
+  167  svn --help 
+  168  svn sw https://svn.riouxsvn.com/mimo/branches/br1 
+  173  svn st
+  174  svn ci -m "change the bug at br1" 
+  183  svn sw https://svn.riouxsvn.com/mimo/trunk
+  184  svn merge https://svn.riouxsvn.com/mimo/branches/br1/trunk 
+  198  svn info 
+  209  svn sw https://svn.riouxsvn.com/mimo/trunk 
+  212  svn info 
+  213  svn --help
+  214  svn merge https://svn.riouxsvn.com/mimo/branches/br1/trunk
+  218  svn sw https://svn.riouxsvn.com/mimo/branches/br1/trunk/
+  219  svn info 
+  220  svn st
+  225  svn sw https://svn.riouxsvn.com/mimo/trunk
+  226  svn --help 
+  227  svn merge https://svn.riouxsvn.com/mimo/branches/br1/trunk
+  229  svn up .
+  237  svn co https://svn.riouxsvn.com/hamada 
+  238  svn co https://svn.riouxsvn.com/hamada --username 
+  239  svn co https://svn.riouxsvn.com/hamada --username mimoyasr
+  242  svn co https://svn.riouxsvn.com/hamada
+  260  svn cp ./trunk/ ./branches/fahdbr1
+  262  svn ci -m"hamada fahd"
+  267  svn sw https://svn.riouxsvn.com/hamada/branches/fahdbr1
+  269  svn info 
+  270  svn ci -m "5555555555555"
+  271  svn st 
+  272  svn add *
+  273  svn ci -m "5555555555555"
+  281  svn sw https://svn.riouxsvn.com/hamada/trunk 
+  282  svn ci -m "77777777777777777777777777777777"
+  284  svn ci -m "77777777777777777777777777777777"
+  286  svn add *
+  287  svn ci -m "77777777777777777777777777777777"
+  289  svn merge https://svn.riouxsvn.com/hamada/branches/fahdbr1
+  290  svn update .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Rent or buy a house :
+	try this app if you want to buy ,rent or sell a flat, house or villa in a specific zone this app allows you to choose and filter with price or zone and you can see it on the map .. 
+
+
+Rent or buy a house in resort:
+	try this app if you want to buy ,rent or sell a flat, house or villa in a village on north coast or whatever resort.. this app allows you to choose and filter with price or zone and you can see it on the map ..you can see images of each place and contact with anyone .. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
